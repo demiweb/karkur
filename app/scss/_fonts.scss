@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowBlackItalic.eot');
+  src: local('Rock Star Narrow Black Italic'), local('RockStar-NarrowBlackItalic'),
+  url('../fonts/rockstar/RockStar-NarrowBlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowBlackItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowBlackItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowBlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowBold.eot');
+  src: local('Rock Star Narrow Bold'), local('RockStar-NarrowBold'),
+  url('../fonts/rockstar/RockStar-NarrowBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowBold.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowBold.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowBoldItalic.eot');
+  src: local('Rock Star Narrow Bold Italic'), local('RockStar-NarrowBoldItalic'),
+  url('../fonts/rockstar/RockStar-NarrowBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowBoldItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowBoldItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowBlack.eot');
+  src: local('Rock Star Narrow Black'), local('RockStar-NarrowBlack'),
+  url('../fonts/rockstar/RockStar-NarrowBlack.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowBlack.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowBlack.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowLightItalic.eot');
+  src: local('Rock Star Narrow Light Italic'), local('RockStar-NarrowLightItalic'),
+  url('../fonts/rockstar/RockStar-NarrowLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowLightItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowLightItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowLightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Semi';
+  src: url('../fonts/rockstar/RockStar-NarrowSemiBoldItalic.eot');
+  src: local('Rock Star Narrow Semi Bold Italic'), local('RockStar-NarrowSemiBoldItalic'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBoldItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBoldItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowMedium.eot');
+  src: local('Rock Star Narrow Medium'), local('RockStar-NarrowMedium'),
+  url('../fonts/rockstar/RockStar-NarrowMedium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowMedium.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowMedium.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Extra';
+  src: url('../fonts/rockstar/RockStar-NarrowExtraLight.eot');
+  src: local('Rock Star Narrow Extra Light'), local('RockStar-NarrowExtraLight'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLight.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLight.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowRegular.eot');
+  src: local('Rock Star Narrow'), local('RockStar-NarrowRegular'),
+  url('../fonts/rockstar/RockStar-NarrowRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowRegular.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowRegular.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowMediumItalic.eot');
+  src: local('Rock Star Narrow Medium Italic'), local('RockStar-NarrowMediumItalic'),
+  url('../fonts/rockstar/RockStar-NarrowMediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowMediumItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowMediumItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowMediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Extra';
+  src: url('../fonts/rockstar/RockStar-NarrowExtraLightItalic.eot');
+  src: local('Rock Star Narrow Extra Light Italic'), local('RockStar-NarrowExtraLightItalic'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLightItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLightItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Extra';
+  src: url('../fonts/rockstar/RockStar-NarrowExtraBoldItalic.eot');
+  src: local('Rock Star Narrow Extra Bold Italic'), local('RockStar-NarrowExtraBoldItalic'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBoldItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBoldItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Ultra';
+  src: url('../fonts/rockstar/RockStar-NarrowUltraBlack.eot');
+  src: local('Rock Star Narrow Ultra Black'), local('RockStar-NarrowUltraBlack'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlack.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlack.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlack.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Extra';
+  src: url('../fonts/rockstar/RockStar-NarrowExtraBold.eot');
+  src: local('Rock Star Narrow Extra Bold'), local('RockStar-NarrowExtraBold'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBold.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBold.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowRegularItalic.eot');
+  src: local('Rock Star Narrow Italic'), local('RockStar-NarrowRegularItalic'),
+  url('../fonts/rockstar/RockStar-NarrowRegularItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowRegularItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowRegularItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowRegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow';
+  src: url('../fonts/rockstar/RockStar-NarrowLight.eot');
+  src: local('Rock Star Narrow Light'), local('RockStar-NarrowLight'),
+  url('../fonts/rockstar/RockStar-NarrowLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowLight.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowLight.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Semi';
+  src: url('../fonts/rockstar/RockStar-NarrowSemiBold.eot');
+  src: local('Rock Star Narrow Semi Bold'), local('RockStar-NarrowSemiBold'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBold.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBold.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Star Narrow Ultra';
+  src: url('../fonts/rockstar/RockStar-NarrowUltraBlackItalic.eot');
+  src: local('Rock Star Narrow Ultra Black Italic'), local('RockStar-NarrowUltraBlackItalic'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlackItalic.woff2') format('woff2'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlackItalic.woff') format('woff'),
+  url('../fonts/rockstar/RockStar-NarrowUltraBlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
