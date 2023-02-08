@@ -4,7 +4,7 @@ $main-font: 'Rubik', sans-serif;
 $second-font: 'Inter', sans-serif;
 $size: 14px;
 $bordo: #430B08;
-$green: #256035;
+$green: rgb(37, 96, 53);
 $light-green: #F0FFF5;
 $grey-grad: linear-gradient(180deg, #F8F8F8 0%, #F8F8F8 100%);
 $dark: #1F1F1F;
@@ -106,7 +106,7 @@ img.lazyload, video.lazyload {
   width: 100%;
   //max-width: 1430px;
   //max-width: 73.6%;
-  padding: 0 15px;
+  padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
 }

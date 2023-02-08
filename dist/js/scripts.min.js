@@ -129,7 +129,118 @@ function openSeach() {
 openSeach();
 
 //search focus
+//control menu desk
 
+let menuOpeners = [...document.querySelectorAll('.menu-opener')];
+let closerMenu = document.querySelector('.menu-closer');
+let menuLinks = [...document.querySelectorAll('.header-menu .menu-item-has-children')];
+
+function controlMenuLinks() {
+    if (menuOpeners.length) {
+        menuLinks.forEach((btn, k) => {
+            let dataNumber = btn.dataset.menu;
+
+            btn.addEventListener('click', (e) => {
+                searchBlock.classList.remove('visible');
+                searchBack.classList.remove('visible');
+                closerMenu.classList.remove('visible');
+                e.preventDefault();
+                e.stopPropagation();
+                if (btn.classList.contains('active')) {
+                    document.querySelector(`.menu-opener[data-number="${Number(dataNumber)}"]`).classList.remove('visible');
+                    btn.classList.remove('active');
+                    closerMenu.classList.remove('visible');
+                } else {
+                    menuLinks.forEach((btn2) => {
+                        btn2.classList.remove('active');
+                    });
+                    menuOpeners.forEach((men) => {
+                        men.classList.remove('visible');
+                    });
+
+                    document.querySelector(`.menu-opener[data-number="${Number(dataNumber)}"]`).classList.add('visible');
+                    btn.classList.add('active');
+                    closerMenu.classList.add('visible');
+                }
+
+
+
+            })
+        });
+        menuOpeners.forEach((men) => {
+            let menuTabsBtns = [...men.querySelectorAll('.menu-tabs-btns > a')];
+            if (menuTabsBtns.length) {
+                let menTabs = [...men.querySelectorAll('.menu-tabs .menu-full')];
+
+                menuTabsBtns.forEach((btn, k) => {
+                    btn.addEventListener('click',  (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        menuTabsBtns.forEach((btn2) => {
+                            btn2.classList.remove('active');
+                        });
+                        menTabs.forEach((btn2) => {
+                            btn2.classList.remove('active');
+                        });
+                        btn.classList.add('active');
+                        menTabs[k].classList.add('active');
+                    })
+                })
+            }
+        });
+        closerMenu.addEventListener('click', () => {
+            closerMenu.classList.remove('visible');
+            menuOpeners.forEach((men) => {
+                men.classList.remove('visible');
+            });
+            menuLinks.forEach((men) => {
+                men.classList.remove('active');
+            })
+        })
+    }
+}
+controlMenuLinks();
+
+
+//control menu desk
+
+//control search desk
+
+let openSearch = [...document.querySelectorAll('.header-search')];
+let searchBlock = document.querySelector('.search-header');
+let searchBack = document.querySelector('.search-backdrop');
+
+function searchControl() {
+    if (openSearch.length) {
+        openSearch.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                searchBlock.classList.toggle('visible');
+                searchBack.classList.toggle('visible');
+
+                menuLinks.forEach((btn2) => {
+                    btn2.classList.remove('active');
+                });
+                menuOpeners.forEach((men) => {
+                    men.classList.remove('visible');
+                });
+                closerMenu.classList.remove('visible');
+            })
+        });
+        searchBlock.querySelector('.search-closer').addEventListener('click', () => {
+            searchBlock.classList.remove('visible');
+            searchBack.classList.remove('visible');
+        });
+        searchBack.addEventListener('click', () => {
+            searchBlock.classList.remove('visible');
+            searchBack.classList.remove('visible');
+        })
+    }
+}
+searchControl();
+
+//control search desk
 
 //modal windows
 
