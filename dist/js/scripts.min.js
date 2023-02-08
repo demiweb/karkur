@@ -45,63 +45,42 @@ burgerControl();
 //sliders
 
 
-let productSlider = [...document.querySelectorAll('.product-photos')];
+let topCourses = [...document.querySelectorAll('.top-courses')];
 
-function startProductSlider() {
-    if (!productSlider.length) {
+function startCoursesSLider() {
+    if (!topCourses.length) {
 
     } else {
-        let charsSingle = [...document.querySelectorAll('.single-char')];
-        let colorsSingle = [...document.querySelectorAll('.single-color')];
 
-        productSlider.forEach((sld) => {
-            let sldCont = sld.querySelector('.product-photos__cont');
-            let pagin = sld.querySelector('.dots');
+
+        topCourses.forEach((sld) => {
+            let sldCont = sld.querySelector('.top-courses-slider');
+            let sldNext = sld.querySelector('.slider-btn--next');
+            let sldPrev = sld.querySelector('.slider-btn--prev');
 
             const swiper2 = new Swiper(sldCont, {
                 // Optional parameters
-                loop: false,
-                slidesPerView: 1,
+                loop:false,
+                slidesPerView: 'auto',
                 slidesPerGroup: 1,
                 speed: 600,
-
-                autoplay: {
-                    delay: 3500,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: sldNext,
+                    prevEl: sldPrev,
                 },
-                spaceBetween: 40,
-                pagination: {
-                    el: pagin,
-                    type: 'bullets',
-                    clickable: true,
-                    bulletClass: 'single-dot',
-                    bulletActiveClass: 'active',
+                autoplay: false,
+                spaceBetween: 10,
+                breakpoints: {
+                    768: {
+                        spaceBetween: 20,
+                    }
                 }
 
 
             });
 
-            if (charsSingle.length) {
-                let dotPhotoSlider = [...document.querySelectorAll('.product-photos .single-dot')][0];
-                charsSingle.forEach((btn) => {
-                    btn.addEventListener('mouseover', () => {
-                        dotPhotoSlider.click();
-                        swiper2.autoplay.stop();
-                    });
-                    btn.addEventListener('mouseout', () => {
-                        swiper2.autoplay.start();
-                    })
-                });
 
-                colorsSingle.forEach((btn) => {
-                    btn.addEventListener('mouseover', () => {
-                        dotPhotoSlider.click();
-                        swiper2.autoplay.stop();
-                    });
-                    btn.addEventListener('mouseout', () => {
-                        swiper2.autoplay.start();
-                    })
-                })
-            }
         })
 
     }
@@ -109,7 +88,7 @@ function startProductSlider() {
 
 //chars hovering
 
-startProductSlider();
+startCoursesSLider();
 
 
 //sliders
