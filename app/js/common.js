@@ -242,6 +242,26 @@ searchControl();
 
 //control search desk
 
+//video plays
+
+let playVideo = [...document.querySelectorAll('.video')];
+
+function controlVideo() {
+    if (playVideo.length) {
+        playVideo.forEach((btn) => {
+            let pl = btn.querySelector('.play');
+
+            pl.addEventListener('click', () => {
+                btn.classList.add('vis');
+            })
+        })
+    }
+}
+
+controlVideo();
+
+//video plays
+
 //modal windows
 
 //modal window
