@@ -2076,6 +2076,7 @@ option[value=""][disabled] {
 }
 
 .footer-top__top, .footer-top__bot {
+  width: calc(100% - 275px);
   flex-grow: 1;
   position: relative;
   margin-right: 275px;
@@ -2088,6 +2089,7 @@ option[value=""][disabled] {
 }
 
 .logos {
+  margin-right: auto;
   .logo {
     position: absolute;
     top: 0;
@@ -2108,6 +2110,7 @@ option[value=""][disabled] {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    margin-top: 7px;
 
     a {
       width: 38px;
