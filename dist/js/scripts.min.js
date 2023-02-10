@@ -85,10 +85,48 @@ function startCoursesSLider() {
 
     }
 }
-
+startCoursesSLider();
 //chars hovering
 
-startCoursesSLider();
+let homePLans = [...document.querySelectorAll('.our-plan')];
+
+function startHomePlansSLider() {
+    if (!homePLans.length) {
+
+    } else {
+
+        if (window.innerWidth < 769) {
+            homePLans.forEach((sld) => {
+                let sldCont = sld.querySelector('.swiper');
+                let sldNext = sld.querySelector('.slider-btn--next');
+                let sldPrev = sld.querySelector('.slider-btn--prev');
+
+                const swiper2 = new Swiper(sldCont, {
+                    // Optional parameters
+                    loop:false,
+                    slidesPerView: 'auto',
+                    slidesPerGroup: 1,
+                    speed: 600,
+                    centeredSlides: false,
+                    navigation: {
+                        nextEl: sldNext,
+                        prevEl: sldPrev,
+                    },
+                    autoplay: false,
+                    spaceBetween: 10,
+
+                });
+
+
+            })
+        }
+
+
+
+    }
+}
+startHomePlansSLider();
+
 
 
 //sliders
