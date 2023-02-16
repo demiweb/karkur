@@ -16,6 +16,11 @@ function allLozadImg() {
 
 allLozadImg();
 
+$(window).scroll(function (e) {
+    $el = $('.filter-line');
+    $el.toggleClass('vis', $(this).scrollTop() > 400);
+
+});
 
 var burger = [...document.querySelectorAll('.burger')];
 var header = document.querySelector('.header');
@@ -307,15 +312,7 @@ function controlModal() {
                         document.body.classList.add('no-scroll');
 
                         mod.classList.add('visible');
-                        if (mod.querySelector('.main-title')) {
-                            setTimeout(() => {
-                                mod.querySelector('.main-title').classList.add('done');
 
-                            }, 500);
-                        }
-                        if (mod.classList.contains('modal-video')) {
-                            mod.querySelector('iframe').src = btn.dataset.link;
-                        }
                     }
                 })
             })
@@ -324,30 +321,14 @@ function controlModal() {
             btn.addEventListener('click', () => {
                 btn.closest('.modal-window').classList.remove('visible');
                 document.body.classList.remove('no-scroll');
-                if (btn.closest('.modal-window').querySelector('.main-title')) {
 
-                    btn.closest('.modal-window').querySelector('.main-title').classList.remove('done');
-
-
-                }
-                if (btn.closest('.modal-window').classList.contains('modal-video')) {
-                    btn.closest('.modal-window').querySelector('iframe').src = '';
-                }
             })
         });
         backplates.forEach((btn) => {
             btn.addEventListener('click', () => {
                 btn.closest('.modal-window').classList.remove('visible');
                 document.body.classList.remove('no-scroll');
-                if (btn.closest('.modal-window').querySelector('.main-title')) {
 
-                    btn.closest('.modal-window').querySelector('.main-title').classList.remove('done');
-
-
-                }
-                if (btn.closest('.modal-window').classList.contains('modal-video')) {
-                    btn.closest('.modal-window').querySelector('iframe').src = '';
-                }
             })
         });
         if (clsSecModal.length) {
