@@ -262,6 +262,49 @@ function searchControl() {
 }
 searchControl();
 
+
+//временные скрипты для поиска, показа на верстке
+
+let searchField = [...document.querySelectorAll('.search-field > button')];
+let clearSearch = [...document.querySelectorAll('.clear-search')];
+let mobileButtonToSearch = [...document.querySelectorAll('.mobile-search button')];
+
+function controlingVisibleSearch() {
+    if (searchField.length) {
+        searchField.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                searchBlock.classList.add('show-results');
+            })
+        });
+        clearSearch.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                searchBlock.classList.remove('show-results');
+                document.querySelector('.search-field input').value = '';
+            })
+        });
+        mobileButtonToSearch.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+
+                e.stopPropagation();
+                e.preventDefault();
+                burger[0].click();
+                searchBlock.classList.add('visible');
+                searchBlock.classList.add('show-results');
+
+            })
+        });
+    }
+}
+
+controlingVisibleSearch();
+
+//временные скрипты для поиска, показа на верстке
+
+
 //control search desk
 
 //video plays
