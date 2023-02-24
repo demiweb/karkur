@@ -17,9 +17,23 @@ function allLozadImg() {
 allLozadImg();
 
 $(window).scroll(function (e) {
-    $el = $('.filter-line');
-    $el.toggleClass('vis', $(this).scrollTop() > 400);
+    // $el = $('.filter-line');
+    // $el.toggleClass('vis', $(this).scrollTop() > 400);
 
+});
+
+
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+        // downscroll code
+        $('.filter-line').removeClass('vis');
+    } else {
+        // upscroll code
+        $('.filter-line').addClass('vis');
+    }
+    lastScrollTop = st;
 });
 
 var burger = [...document.querySelectorAll('.burger')];
