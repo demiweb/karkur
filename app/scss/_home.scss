@@ -1895,13 +1895,27 @@
   justify-content: flex-start;
   gap: 0.5208vw;
   margin-bottom: 0.5208vw;
+  .wpcf7-form-control-wrap {
+    width: 100%;
+
+  }
+  .wpcf7-form-control {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.5208vw;
+    margin-bottom: 0.5208vw;
+  }
 }
+
+
 
 option[value=""][disabled] {
   display: none;
 }
 
-.radio-single {
+.radio-single, .wpcf7-radio .wpcf7-list-item {
   position: relative;
 
   label {
@@ -1924,13 +1938,13 @@ option[value=""][disabled] {
     pointer-events: auto;
     cursor: pointer;
 
-    &:checked ~ div, &:hover ~ div {
+    &:checked ~ div, &:hover ~ div,&:checked ~ .wpcf7-list-item-label, &:hover ~ .wpcf7-list-item-label {
       color: #F0FFF5;
       border-color: #F0FFF5;
     }
   }
 
-  div {
+  div, .wpcf7-list-item-label {
     height: 2.2396vw;
     display: flex;
     align-items: center;
@@ -2023,8 +2037,11 @@ option[value=""][disabled] {
     margin: 0;
     padding: 0;
   }
+  span {
+    margin: 0 !important;
+  }
 
-  div {
+  div, .wpcf7-list-item-label {
     font-style: normal;
     font-weight: 400;
     font-size: 0.7292vw;
@@ -2065,7 +2082,7 @@ option[value=""][disabled] {
     pointer-events: auto;
     cursor: pointer;
 
-    &:checked ~ div::before {
+    &:checked ~ div::before, &:checked ~ .wpcf7-list-item-label::before {
       background: url("../img/check-1.svg") no-repeat center / 0.6771vw, #F8F8F8;
     }
   }
@@ -2241,7 +2258,7 @@ option[value=""][disabled] {
     margin-bottom: 1.0417vw;
   }
 
-  > a {
+  > a, li.custom-link a {
     font-style: normal;
     font-weight: 700;
     font-size: 0.7292vw;
@@ -2625,7 +2642,7 @@ option[value=""][disabled] {
   width: 18.5938vw;
 
   .form-checkbox {
-    div {
+    div, .wpcf7-list-item-label {
       color: rgba(0, 28, 4, 0.6);;
     }
   }
@@ -5089,7 +5106,7 @@ option[value=""][disabled] {
   position: fixed;
   top: 4.2188vw;
   left: 0;
-  z-index: 100;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5617,15 +5634,18 @@ option[value=""][disabled] {
 
     .radio-block {
       justify-content: center;
+      .wpcf7-form-control {
+        justify-content: center;
+      }
     }
 
-    .radio-single {
-      div {
+    .radio-single, .wpcf7-radio .wpcf7-list-item {
+      div, .wpcf7-list-item-label{
         color: rgba(0, 28, 4, 0.6);
       }
     }
 
-    .radio-single input:checked ~ div, .radio-single input:hover ~ div {
+    .radio-single input:checked ~ div, .radio-single input:hover ~ div, .wpcf7-radio .wpcf7-list-item input:checked ~ .wpcf7-list-item-label, .wpcf7-radio .wpcf7-list-item input:hover ~ .wpcf7-list-item-label {
       border: 1px solid rgba(0, 28, 4, 0.9);
       color: rgba(0, 28, 4, 0.9);
     }
@@ -6493,10 +6513,10 @@ option[value=""][disabled] {
   .contact-us__mobile .course-form {
     margin-top: 0;
 
-    .radio-single {
+    .radio-single, .wpcf7-radio .wpcf7-list-item {
       width: auto;
 
-      div {
+      div, .wpcf7-list-item-label {
         color: #256035;
         color: rgba(0, 28, 4, 0.6);
         height: 10.5128vw;
@@ -6508,7 +6528,7 @@ option[value=""][disabled] {
       }
     }
 
-    .radio-single input:checked ~ div, .radio-single input:hover ~ div {
+    .radio-single input:checked ~ div, .radio-single input:hover ~ div, .wpcf7-radio .wpcf7-list-item input:checked ~ .wpcf7-list-item-label, .wpcf7-radio .wpcf7-list-item input:hover ~ .wpcf7-list-item-label {
       color: #256035;
       border-color: #256035;
     }
@@ -8511,7 +8531,7 @@ option[value=""][disabled] {
     gap: 9.4872vw;
     flex-wrap: wrap;
   }
-  .footer-column > a {
+  .footer-column > a, .footer-column li.custom-link a {
     font-size: 3.5897vw;
     line-height: 73.5%;
 
@@ -8597,7 +8617,7 @@ option[value=""][disabled] {
     margin-right: 2.3077vw;
     margin-left: 5.1282vw;
   }
-  .form-checkbox div {
+  .form-checkbox div, .form-checkbox .wpcf7-list-item-label {
     font-size: 3.5897vw;
     line-height: 73.5%;
     padding-right: 8.9744vw;
@@ -8608,7 +8628,7 @@ option[value=""][disabled] {
       height: 5.8974vw;
     }
   }
-  .form-checkbox input:checked ~ div::before {
+  .form-checkbox input:checked ~ div::before, .form-checkbox input:checked ~ .wpcf7-list-item-label::before {
     background: url(../img/check-1.svg) no-repeat center/3.3333vw, #f8f8f8;
   }
   .form form button {
@@ -8626,13 +8646,17 @@ option[value=""][disabled] {
   }
   .radio-block {
     width: 100%;
-    gap: 1.2821vw;
-    margin-bottom: 2vw;
+
+    .wpcf7-form-control {
+      width: 100%;
+      gap: 1.2821vw;
+      margin-bottom: 2vw;
+    }
   }
-  .radio-single {
+  .radio-single, .wpcf7-radio .wpcf7-list-item {
     width: calc(50% - (1.2821vw / 2));
   }
-  .radio-single div {
+  .radio-single div, .wpcf7-radio .wpcf7-list-item  .wpcf7-list-item-label {
     height: 8.2051vw;
     font-size: 4.1026vw;
     line-height: 92.5%;
