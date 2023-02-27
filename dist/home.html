@@ -1120,9 +1120,14 @@
             let ir = hOlistItems.length - 1;
             let gap = document.querySelector('.our-reasons__list');
             console.log(gap);
+            let w1 = hOlistItems[0].getBoundingClientRect().top + hOlistItems[0].offsetHeight + window.pageYOffset;
+            let w2 = hOlistItems[1].getBoundingClientRect().top  + window.pageYOffset;
+
+            console.log();
             hOlistItems.forEach((item, k) => {
                 let h = item.offsetHeight;
-
+                let dista = window.pageYOffset + item.getBoundingClientRect().top + h;
+                console.log(dista + ' dista--h' + h);
 
                 if (k === ir) {
                     console.log('qwdqwd');
@@ -1130,7 +1135,7 @@
                     document.querySelector('.our-reasons__list .our-reason__line').style.height = `${heiGhtItems}px`;
                 } else {
                     heiGhtItems += h;
-                    heiGhtItems += 80;
+                    heiGhtItems += (w2 - w1);
                 }
 
             })
@@ -1138,7 +1143,9 @@
     }
 
     setHeightOfLine();
-
+    const para = document.querySelector('.our-reason__line');
+    const compStyles = window.getComputedStyle(para);
+    console.log(compStyles.getPropertyValue('gap') + ' gggap');
     let hOfList = document.querySelector('.our-reasons__list').offsetHeight;
     var controller = new ScrollMagic.Controller();
     var scene = new ScrollMagic.Scene({triggerElement: ".our-reasons__list", duration: `${hOfList - 150}px`})

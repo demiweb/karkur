@@ -107,6 +107,7 @@ function startCoursesSLider() {
 startCoursesSLider();
 //chars hovering
 
+
 let homePLans = [...document.querySelectorAll('.our-plan')];
 
 function startHomePlansSLider() {

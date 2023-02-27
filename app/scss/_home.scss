@@ -509,7 +509,7 @@
 
   > p {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2.0833vw;
     line-height: 100%;
     text-align: right;
@@ -716,7 +716,7 @@
     justify-content: flex-start;
 
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2.0833vw;
     line-height: 87%;
     text-align: right;
@@ -955,7 +955,7 @@
 
     h1, h2 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: bold;
       font-size: 2.0833vw;
       line-height: 100%;
       text-align: right;
@@ -986,7 +986,7 @@
 
 
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   height: 2.7083vw;
   font-size: 0.8333vw;
   line-height: 73.5%;
@@ -1083,7 +1083,7 @@
 
     a {
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 0.9375vw;
       line-height: 110%;
       text-align: right;
@@ -1098,7 +1098,7 @@
 
   h3 {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 2.0833vw;
     line-height: 100%;
     text-align: right;
@@ -1115,7 +1115,7 @@
       justify-content: flex-start;
 
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 0.9375vw;
       line-height: 110%;
       text-align: right;
@@ -1209,7 +1209,7 @@
 
     h4 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: bold;
       font-size: 1.5625vw;
       line-height: 90.5%;
       text-align: right;
@@ -1352,7 +1352,7 @@
 .rolled-text {
   position: absolute;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 3.1867vw;
   line-height: 76%;
   text-align: right;
@@ -1429,7 +1429,7 @@
 
   span {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.5625vw;
     line-height: 0.9;
     text-align: center;
@@ -1441,7 +1441,7 @@
 
   p {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.8333vw;
     line-height: 160%;
     text-align: center;
@@ -1580,7 +1580,7 @@
           color: rgba(0, 28, 4, 0.6);
 
           strong {
-            font-weight: 900;
+            font-weight: 700;
             margin-top: 0.5208vw;
             color: rgba(0, 28, 4, 0.9);
           }
@@ -1665,6 +1665,9 @@
   .container {
     max-width: 66.3542vw;
   }
+  .blog-container__head {
+    display: none;
+  }
 }
 
 .top-blogs__list {
@@ -1732,7 +1735,7 @@
 
     p {
       font-style: normal;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 1.3021vw;
       line-height: 122%;
       text-align: right;
@@ -1743,7 +1746,7 @@
 
     span {
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 0.8333vw;
       line-height: 73.5%;
       letter-spacing: -0.02em;
@@ -1810,7 +1813,7 @@
   padding: 1.5625vw 9.4792vw 1.5625vw 7.3958vw;
 
   > p {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2.0833vw;
     line-height: 100%;
     text-align: right;
@@ -1934,7 +1937,7 @@ option[value=""][disabled] {
     justify-content: center;
     padding: 0.4688vw 1.0417vw;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.9375vw;
     line-height: 89.5%;
     text-align: center;
@@ -1960,7 +1963,7 @@ option[value=""][disabled] {
     border: 1px solid rgba(255, 255, 255, 0);
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 0.9375vw;
     line-height: 110%;
     letter-spacing: -0.03em;
@@ -1975,7 +1978,7 @@ option[value=""][disabled] {
 
     &::placeholder {
       font-style: normal;
-      font-weight: 400;
+      font-weight: 200;
       font-size: 0.9375vw;
       line-height: 110%;
       letter-spacing: -0.03em;
@@ -2538,7 +2541,7 @@ option[value=""][disabled] {
 
   h1 {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 3.1250vw;
     line-height: 104.5%;
     text-align: center;
@@ -2683,7 +2686,7 @@ option[value=""][disabled] {
   .text {
     flex-grow: 1;
     background: #F8F8F8;
-    border-radius: 0px 0px 0px 40px;
+    border-radius: 0px 40px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -3235,7 +3238,7 @@ option[value=""][disabled] {
 
     > span {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 2.0833vw;
       line-height: 100%;
       text-align: center;
@@ -3310,7 +3313,7 @@ option[value=""][disabled] {
 
     span {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 0.9375vw;
       line-height: 110%;
       text-align: right;
@@ -3617,7 +3620,7 @@ option[value=""][disabled] {
 
     h1 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 3.1250vw;
       line-height: 104.5%;
       text-align: right;
@@ -4077,7 +4080,7 @@ option[value=""][disabled] {
 
     h1 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 3.1250vw;
       line-height: 104.5%;
       text-align: right;
@@ -4227,7 +4230,7 @@ option[value=""][disabled] {
 
     h2 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 2.0833vw;
       line-height: 100%;
       text-align: right;
@@ -4267,11 +4270,11 @@ option[value=""][disabled] {
       color: rgba(0, 28, 4, 0.6);
 
       &:nth-child(odd) {
-        width: 21.6146vw;
+        width: 43.2%;
       }
 
       &:nth-child(even) {
-        width: 23.8542vw;
+        width: 47.6%;
       }
     }
   }
@@ -4317,7 +4320,7 @@ option[value=""][disabled] {
 
     h1 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 3.1250vw;
       line-height: 104.5%;
       text-align: center;
@@ -4454,7 +4457,7 @@ option[value=""][disabled] {
 
   h1 {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 3.1250vw;
     line-height: 104.5%;
     text-align: center;
@@ -4555,7 +4558,7 @@ option[value=""][disabled] {
 
     h2 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 2.0833vw;
       line-height: 100%;
       text-align: right;
@@ -4684,7 +4687,7 @@ option[value=""][disabled] {
 
     h3 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 2.0833vw;
       line-height: 100%;
       text-align: center;
@@ -4806,7 +4809,7 @@ option[value=""][disabled] {
 
   h2 {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2.0833vw;
     line-height: 100%;
     text-align: right;
@@ -5148,7 +5151,7 @@ option[value=""][disabled] {
 
     h1 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 3.1250vw;
       line-height: 104.5%;
       text-align: center;
@@ -5270,6 +5273,7 @@ option[value=""][disabled] {
     color: rgba(0, 28, 4, 0.6);
     display: inline-block;
     margin-bottom: 0.6250vw;
+    white-space: nowrap;
   }
 
   p {
@@ -5542,7 +5546,7 @@ option[value=""][disabled] {
 
   h1 {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 3.1250vw;
     line-height: 86.5%;
     text-align: center;
@@ -5780,7 +5784,7 @@ option[value=""][disabled] {
 
   h1 {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 3.1250vw;
     line-height: 86.5%;
     text-align: right;
@@ -5868,7 +5872,7 @@ option[value=""][disabled] {
       max-height: 19.0104vw;
 
       .contact-us__blocks {
-        width: auto;
+        width: 54%;
 
         &:nth-last-child(2) {
           margin-bottom: 0;
@@ -6017,7 +6021,7 @@ option[value=""][disabled] {
 
     h1 {
       font-style: normal;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 3.1250vw;
       line-height: 104.5%;
       text-align: right;
@@ -6253,6 +6257,7 @@ option[value=""][disabled] {
   }
   .top-blogs {
     padding-bottom: 8.7063vw;
+
   }
   .single-blog .text p {
 
@@ -6538,7 +6543,7 @@ option[value=""][disabled] {
     white-space: nowrap;
     display: flex;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 15.3846vw;
     line-height: 78%;
     text-align: center;
@@ -6947,7 +6952,9 @@ option[value=""][disabled] {
     }
   }
   .mentor-bonuses__cert {
-    width: 100%;
+    width: calc(100% + 10px);
+    margin-right: -2.5641vw;
+    margin-left: 0;
   }
   .mentor-gallery {
     width: calc(100% + 10.0000vw);
@@ -7112,7 +7119,7 @@ option[value=""][disabled] {
       h1 {
         font-size: 8.9744vw;
         line-height: 101%;
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: -0.035em;
       }
 
@@ -7749,15 +7756,19 @@ option[value=""][disabled] {
     }
 
     p {
-      font-size: 3.5897vw;
+      font-size: 3.7337vw;
       line-height: 150%;
       margin-bottom: 15.3846vw;
-      max-width: 80.2564vw;
+      max-width: 100%;
+      color: rgba(0, 28, 4, 0.6);
     }
 
     img {
       border-radius: 20px;
       margin-bottom: 15.3846vw;
+      width: calc(100% + 10.2564vw);
+      margin-left: -5.1282vw;
+      margin-right: -5.1282vw;
     }
   }
   .post-side {
@@ -7773,8 +7784,8 @@ option[value=""][disabled] {
     .container {
       width: 100%;
       max-width: 100%;
-      padding-right: 4.8718vw;
-      padding-left: 5.1282vw;
+      padding-right: 10.2564vw;
+      padding-left: 10.2564vw;
     }
   }
 
@@ -7960,7 +7971,7 @@ option[value=""][disabled] {
     overflow-x: auto;
     align-items: stretch;
     justify-content: flex-start;
-    gap: 11.7949vw;
+    gap: 2.5641vw;
   }
   .single-comment {
     flex-shrink: 0;
@@ -7970,6 +7981,7 @@ option[value=""][disabled] {
     align-items: center;
     justify-content: flex-start;
 
+    background: #fff;
     .img {
       width: 25.6410vw;
       height: 25.6410vw;
@@ -8720,7 +8732,14 @@ option[value=""][disabled] {
 
     background: #F8F8F8;
     border-radius: 40px 0px 0px 0px;
-
+    .central-text {
+      display: none;
+    }
+    .blog-container__head {
+      display: flex;
+      background: rgba(255, 255, 255, 0);
+      padding: 0;
+    }
     > .container {
       max-width: 100%;
       padding: 0 6.1538vw;
@@ -9093,6 +9112,12 @@ option[value=""][disabled] {
             background: url("../img/arr-left.svg") no-repeat center / 100%;
           }
         }
+      }
+    }
+    &.course-page-top-courses {
+      background: #fff;
+      .top-course {
+        background: #f8f8f8;
       }
     }
   }
