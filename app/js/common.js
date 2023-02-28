@@ -17,8 +17,8 @@ function allLozadImg() {
 allLozadImg();
 
 $(window).scroll(function (e) {
-    // $el = $('.filter-line');
-    // $el.toggleClass('vis', $(this).scrollTop() > 400);
+    $el = $('.course-line');
+    $el.toggleClass('vis', $(this).scrollTop() > 400);
 
 });
 
@@ -481,5 +481,74 @@ function controlFaq() {
 controlFaq();
 
 //faq
+
+
+
+
+let progressBtns = [...document.querySelectorAll('.course-line__cont > ul li a')];
+
+function goToSectionProg() {
+    if (progressBtns.length) {
+        progressBtns.forEach((btn) => {
+            let numb = btn.dataset.prog;
+            if (numb) {
+                let el = document.querySelector(`.page-section[data-sec="${numb}"]`);
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    $([document.documentElement, document.body]).animate({
+                            scrollTop: $(el).offset().top - 81
+                    }, 500);
+
+
+                })
+            }
+
+        })
+    }
+}
+
+goToSectionProg();
+
+const sections = document.querySelectorAll(".page-section");
+
+// Add an event listener listening for scroll
+
+function navHighlighter() {
+
+    // Get current scroll position
+    let scrollY = window.pageYOffset;
+
+    // Now we loop through sections to get height, top and ID values for each
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - (sectionHeight / 2.5);
+        sectionId = current.dataset.sec;
+
+        if (
+            scrollY > sectionTop &&
+            scrollY <= sectionTop + sectionHeight
+        ) {
+            // console.log(sectionId);
+
+            [...document.querySelectorAll(".course-line__cont > ul li a")].forEach((bts, k) => {
+                if (k === (sectionId - 1)) {
+                    bts.classList.add('active');
+                } else {
+                    bts.classList.remove('active');
+                }
+            })
+        }
+    });
+}
+
+
+window.onscroll = function () {
+    navHighlighter();
+
+};
+
+
 
 
