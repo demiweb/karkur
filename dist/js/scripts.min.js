@@ -338,8 +338,148 @@ function controlVideo() {
     }
 }
 
-controlVideo();
+// controlVideo();
 
+
+//tp video
+
+//play video
+var player;
+
+function createVideo(videoBlockId, videoId) {
+    player = new YT.Player(videoBlockId, {
+        videoId: videoId,
+        playerVars: {
+            // 'autoplay':1,
+            'autohide': 1,
+            'showinfo': 0,
+            'rel': 0,
+            'loop': 1,
+            'playsinline': 1,
+            'fs': 1,
+            'allowsInlineMediaPlayback': true
+        },
+        events: {
+            'onReady': function (e) {
+                // e.target.mute();
+                // if ($(window).width() > 991) {
+
+                e.target.playVideo();
+
+                // }
+            },
+            'onStateChange': function (e) {
+
+            },
+        }
+    });
+}
+
+
+//play video
+
+let botSlides = [...document.querySelectorAll('.video .play')];
+
+function videoControlSlides() {
+    if (botSlides.length) {
+        botSlides.forEach((btn) => {
+            let type = btn.dataset.videoType;
+            let id = btn.dataset.videoId;
+            let videoCont = btn.closest('.video').querySelector('.img');
+            // console.log(id);
+            btn.addEventListener('click', () => {
+                videoCont.dataset.videoType = type;
+                videoCont.dataset.videoId = id;
+                // videoCont.querySelector('iframe').id = id;
+
+                btn.closest('.video').classList.add('vis');
+
+                let videoId = id;
+
+
+                //    new 22.11.22
+
+                if (type === 'video') {
+                    let videoBl = document.createElement('video');
+                    videoBl.src = id;
+                    videoBl.playsinline = true;
+                    videoBl.controls = true;
+                    videoCont.classList.add('playing');
+                    if (videoCont.querySelector('.video-frame')) {
+                        document.querySelector('.video-iframe video').pause();
+                    } else {
+                        $(videoCont).append('<div class="video-iframe" id="' + videoId + '"></div>');
+                        videoCont.querySelector('.video-iframe').append(videoBl);
+                        document.querySelector('.video-iframe video').play();
+                    }
+
+
+
+                } else {
+
+                    if (type === 'vimeo') {
+
+                        if (videoCont.classList.contains('playing')) {
+                            var player2 = new Vimeo.Player(videoCont.querySelector('iframe'));
+                            if (videoCont.classList.contains('pause')) {
+                                player2.play();
+                                videoCont.classList.remove('pause');
+                            } else {
+                                player2.pause();
+                                videoCont.classList.add('pause');
+                            }
+
+                        } else {
+                            let videoBl = document.createElement('iframe');
+                            videoBl.src = id;
+                            videoBl.playsinline = true;
+                            videoBl.controls = true;
+                            videoBl.autoplay = true;
+                            videoBl.setAttribute('allow', 'autoplay');
+                            videoBl.setAttribute('frameborder', '0');
+                            videoCont.classList.add('playing');
+                            videoCont.append(videoBl);
+
+
+                            var player2 = new Vimeo.Player(videoCont.querySelector('iframe'));
+
+                            player2.play();
+                        }
+
+
+
+
+                    } else {
+                        if (videoCont.classList.contains('playing')) {
+
+                            if (videoCont.classList.contains('pause')) {
+                                player.playVideo();
+                                videoCont.classList.remove('pause')
+                            } else {
+                                player.pauseVideo();
+                                videoCont.classList.add('pause')
+                            }
+                        } else {
+                            videoCont.classList.add('playing');
+                            $(videoCont).append('<div class="video-iframe" id="' + videoId + '"></div>');
+                            createVideo(videoId, videoId);
+                        }
+
+                    }
+                }
+                //    new 22.11.22
+
+
+            })
+        })
+    }
+}
+
+videoControlSlides();
+
+
+
+//tp video
 //video plays
 
 //modal windows

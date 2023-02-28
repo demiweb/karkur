@@ -2972,8 +2972,21 @@ option[value=""][disabled] {
 
     &.vis {
       .poster {
-        opacity: 0;
         pointer-events: none;
+        > img {
+          opacity: 0 !important;
+        }
+        &::after {
+          opacity: 0;
+        }
+        .play {
+          opacity: 0;
+        }
+      }
+      &:hover {
+        .play {
+          opacity: 1 !important;
+        }
       }
     }
   }
@@ -3380,10 +3393,14 @@ option[value=""][disabled] {
     height: 100%;
     flex-shrink: 0;
     border-radius: 30px;
+    pointer-events: none;
 
     .img {
       width: 100%;
       height: 100%;
+      position: relative;
+      z-index: 1;
+      pointer-events: auto;
     }
 
     iframe, video {
@@ -3394,8 +3411,21 @@ option[value=""][disabled] {
 
     &.vis {
       .poster {
-        opacity: 0;
         pointer-events: none;
+        > img {
+          opacity: 0 !important;
+        }
+        .play {
+          opacity: 0;
+        }
+        &::after {
+          opacity: 0;
+        }
+      }
+      &:hover {
+        .play {
+          opacity: 1 !important;
+        }
       }
     }
   }
@@ -3428,6 +3458,7 @@ option[value=""][disabled] {
     }
 
     .play {
+      pointer-events: auto;
       z-index: 2;
       width: 4.3229vw;
       height: 4.3229vw;
@@ -3446,6 +3477,13 @@ option[value=""][disabled] {
   }
 }
 
+.video-iframe {
+  width: 100%;
+  height: 100%;
+  iframe, video {
+    width: 100%;
+  }
+}
 
 .course-comments__mob {
   display: none;
