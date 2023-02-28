@@ -344,10 +344,11 @@ function controlVideo() {
 //tp video
 
 //play video
-var player;
+let irP = 0;
+var player = [];
 
-function createVideo(videoBlockId, videoId) {
-    player = new YT.Player(videoBlockId, {
+function createVideo(videoBlockId, videoId, irP) {
+    player[irP] = new YT.Player(videoBlockId, {
         videoId: videoId,
         playerVars: {
             // 'autoplay':1,
@@ -453,16 +454,18 @@ function videoControlSlides() {
                         if (videoCont.classList.contains('playing')) {
 
                             if (videoCont.classList.contains('pause')) {
-                                player.playVideo();
+                                player[Number(videoCont.dataset.pl)].playVideo();
                                 videoCont.classList.remove('pause')
                             } else {
-                                player.pauseVideo();
+                                player[Number(videoCont.dataset.pl)].pauseVideo();
                                 videoCont.classList.add('pause')
                             }
                         } else {
                             videoCont.classList.add('playing');
                             $(videoCont).append('<div class="video-iframe" id="' + videoId + '"></div>');
-                            createVideo(videoId, videoId);
+                            createVideo(videoId, videoId, irP);
+                            videoCont.dataset.pl = irP;
+                            irP++;
                         }
 
                     }
