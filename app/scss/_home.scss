@@ -2123,6 +2123,7 @@ option[value=""][disabled] {
       line-height: 73.5%;
       letter-spacing: -0.02em;
       color: rgba(0, 0, 0, 0.38);
+
       &.lm {
         margin-right: auto;
         margin-left: 4.1667vw;
@@ -2133,6 +2134,7 @@ option[value=""][disabled] {
         font-weight: 700;
         color: rgba(0, 0, 0, 0.61);
       }
+
       a:hover {
         text-decoration: underline;
       }
@@ -4191,6 +4193,12 @@ option[value=""][disabled] {
     z-index: 3;
     border-radius: 0px 0px 104px 0px;
     overflow: hidden;
+    &.dsk {
+      display: flex;
+    }
+    &.mb {
+      display: none;
+    }
 
     img {
       width: 100%;
@@ -6661,8 +6669,130 @@ option[value=""][disabled] {
 }
 
 //
+.custom-phone-mail {
+  display: none;
+}
+
+.contact-us__form {
+  span.uniq {
+    display: none;
+  }
+}
+
+.top-blogs .blog-container__head {
+  .link {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 769px) {
+  .top-blogs .blog-container__head {
+    .link {
+      display: flex;
+      position: absolute;
+      bottom: 20.5128vw;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+
+      a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        font-style: normal;
+        font-weight: 500;
+        text-align: right;
+        letter-spacing: -.03em;
+        color: #256035;
+
+
+        font-size: 4.6154vw;
+        line-height: 110%;
+
+        &::after {
+          display: inline-block;
+          content: '';
+          background: url(../img/arr-left.svg) no-repeat center/100%;
+          width: 5.8974vw;
+          height: 5.3846vw;
+          margin-right: 2.5641vw;
+
+        }
+      }
+    }
+  }
+  .contact-us__form {
+    span.uniq {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5897vw;
+      line-height: 73.5%;
+      text-align: center;
+      width: 100%;
+      color: rgba(240, 255, 245, 0.7);
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 10.2564vw;
+    }
+  }
+  .custom-phone-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.1538vw;
+    margin-top: 10.2564vw;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+
+      &:first-child {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          right: calc(100% + 2.5641vw);
+          top: 50%;
+          width: 1.0256vw;
+          height: 1.0256vw;
+          border-radius: 50%;
+          display: inline-block;
+          content: '';
+          transform: translate(0, -50%);
+          background: rgba(240, 255, 245, 0.7);
+        }
+      }
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5897vw;
+      line-height: 1;
+      text-align: right;
+      letter-spacing: -0.02em;
+      color: rgba(240, 255, 245, 0.7);
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      img {
+        height: 4.3590vw;
+        width: auto;
+        margin-right: 1.2821vw;
+      }
+    }
+  }
+
   .course-line {
     display: none;
   }
@@ -6936,6 +7066,7 @@ option[value=""][disabled] {
         font-size: 6.4103vw;
         line-height: 101%;
         margin-bottom: 7.9487vw;
+        max-width: 72.2222vw;
       }
 
       > p {
@@ -7153,7 +7284,7 @@ option[value=""][disabled] {
     .container {
       max-width: 100%;
       padding-left: 11.2821vw;
-      padding-right: 17.1795vw;
+      padding-right: 11.1795vw;
 
       h2 {
         font-size: 6.4103vw;
@@ -7232,6 +7363,9 @@ option[value=""][disabled] {
     padding-right: 16.1538vw;
     flex-wrap: nowrap;
     gap: 2.5641vw;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .single-crew {
       width: 100%;
@@ -7260,6 +7394,9 @@ option[value=""][disabled] {
     overflow-x: auto;
     padding-left: 16.6667vw;
     gap: 2.5641vw;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .img {
       flex-shrink: 0;
@@ -7312,6 +7449,9 @@ option[value=""][disabled] {
     margin-left: -10.0000vw;
     margin-right: -10.0000vw;
     gap: 2.5641vw;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .about-mentor {
     margin: 16.1538vw 0 17.1795vw;
@@ -7367,7 +7507,7 @@ option[value=""][disabled] {
     flex-wrap: wrap;
     justify-content: space-between;
     writing-mode: vertical-rl;
-    max-height: 74.8718vw;
+    max-height: 78.8718vw;
     margin-bottom: 7.6923vw;
   }
   .single-mentor-stat {
@@ -7381,6 +7521,7 @@ option[value=""][disabled] {
     span {
       font-size: 4.6154vw;
       line-height: 110%;
+      margin-bottom: 3vw;
     }
 
     p {
@@ -7534,7 +7675,7 @@ option[value=""][disabled] {
       width: 100%;
       padding: 6.4103vw 2.5641vw 7.6923vw;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 700;
       font-size: 5.6410vw;
       line-height: 1;
       text-align: center;
@@ -7692,6 +7833,11 @@ option[value=""][disabled] {
         line-height: 120%;
         max-width: 100%;
       }
+    }
+  }
+  .crew-list {
+    .single-crew .text span {
+      font-weight: 400;
     }
   }
   .crew-content {
@@ -7858,6 +8004,12 @@ option[value=""][disabled] {
       width: 100%;
       height: 105.1282vw;
       border-radius: 0px 0px 104px 0px;
+      &.dsk {
+        display: none;
+      }
+      &.mb {
+        display: flex;
+      }
     }
 
     .text {
@@ -8240,6 +8392,7 @@ option[value=""][disabled] {
         color: rgba(0, 28, 4, 0.6);
         font-size: 4.6154vw;
         line-height: 130.5%;
+        max-width: 58.3333vw;
         /* or 23px */
       }
 
@@ -8460,7 +8613,11 @@ option[value=""][disabled] {
     height: auto;
     width: 100%;
     align-items: flex-start;
-    padding: 9.4872vw 5.1282vw 0;
+    padding: 4.4872vw 5.1282vw 0;
+
+    .breadcrumbs {
+      margin-bottom: 3vw;
+    }
 
     h1 {
       font-size: 8.9744vw;
@@ -8722,10 +8879,12 @@ option[value=""][disabled] {
 
       p {
         order: 2;
+
         &.lm {
           order: 3;
           padding-top: 2vw;
         }
+
         width: 100%;
         padding: 4.6154vw;
         background: #F8F8F8;
