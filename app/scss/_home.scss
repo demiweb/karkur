@@ -2123,11 +2123,18 @@ option[value=""][disabled] {
       line-height: 73.5%;
       letter-spacing: -0.02em;
       color: rgba(0, 0, 0, 0.38);
+      &.lm {
+        margin-right: auto;
+        margin-left: 4.1667vw;
+      }
 
-      strong {
+      strong, a {
         font-family: 'Cuprum', sans-serif;
         font-weight: 700;
         color: rgba(0, 0, 0, 0.61);
+      }
+      a:hover {
+        text-decoration: underline;
       }
 
     }
@@ -8700,6 +8707,7 @@ option[value=""][disabled] {
       justify-content: flex-start;
 
       ul {
+        order: 1;
         margin-bottom: 6.9231vw;
         gap: 5.1282vw;
 
@@ -8713,6 +8721,11 @@ option[value=""][disabled] {
       }
 
       p {
+        order: 2;
+        &.lm {
+          order: 3;
+          padding-top: 2vw;
+        }
         width: 100%;
         padding: 4.6154vw;
         background: #F8F8F8;
@@ -8723,7 +8736,7 @@ option[value=""][disabled] {
         font-size: 4.1026vw;
         line-height: 73.5%;
 
-        strong {
+        strong, a {
           margin-left: 1.0256vw;
         }
       }
