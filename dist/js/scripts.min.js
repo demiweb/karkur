@@ -83,6 +83,7 @@ function startCoursesSLider() {
                 slidesPerView: 'auto',
                 slidesPerGroup: 1,
                 speed: 600,
+                initialSlide: 2,
                 centeredSlides: true,
                 navigation: {
                     nextEl: sldNext,
